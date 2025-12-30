@@ -24,6 +24,18 @@ const Navbar = () => {
             <NavLink to={"/fetch_react_query"} className={getClass}>
               Fetch_React_Query
             </NavLink>
+            <NavLink to={"/fetch_useQueryInLoader"} className={getClass}>
+              use_Query_In_Loader
+            </NavLink>
+            <NavLink to={"/fetch_useSuspenseQuery"} className={getClass}>
+              use_Suspense_Query
+            </NavLink>
+            <NavLink
+              to={"/fetch_useSuspenseQueryInLoader"}
+              className={getClass}
+            >
+              use_Suspense_In_Loader
+            </NavLink>
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@ const Fetch_React_Query = () => {
   const queryClient = useQueryClient();
   const fetchData = async ({ queryKey }) => {
     const [, page] = queryKey;
+
     const res = await getApiDataRQ(page);
     return res.data;
   };

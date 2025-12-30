@@ -6,7 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 const SinglePage = () => {
   const { id } = useParams();
   const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["posts", id],
+    queryKey: ["item", id],
     queryFn: ({ queryKey }) => {
       const [, id] = queryKey;
       return getSingleData(id);

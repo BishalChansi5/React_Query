@@ -5,7 +5,7 @@ import { useNavigation } from "react-router-dom";
 
 const AppLayout = () => {
   const navigation = useNavigation();
-  console.log(navigation);
+  // console.log(navigation);
   if (navigation.state === "loading") {
     return (
       <div>
